@@ -14,5 +14,6 @@ app.MapGet("/", () => "Biblioteca API");
 app.MapFilmesApi();
 app.MapSeriesApi();
 app.MapLivrosApi();
+app.MapJogosApi();
 
 app.Run();
