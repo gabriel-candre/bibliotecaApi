@@ -23,6 +23,7 @@ public static class LivrosApi {
             }
 
             livro.titulo = livroAlterado.titulo;
+            livro.paginas = livroAlterado.paginas;
             livro.ano = livroAlterado.ano;
             livro.autor = livroAlterado.autor;
             livro.genero = livroAlterado.genero;
