@@ -15,7 +15,7 @@ public static class JogosApi {
             return Results.Created($"/jogos/{jogo.Id}", jogo);
         });
         
-        group.MapPut("/", async (int id, Jogo jogoAlterado, BibliotecaContext db) => {
+        group.MapPut("/{id}", async (int id, Jogo jogoAlterado, BibliotecaContext db) => {
             var jogo = await db.Jogos.FindAsync(id);
             
             if (jogo is null) {
@@ -25,7 +25,7 @@ public static class JogosApi {
             jogo.titulo = jogoAlterado.titulo;
             jogo.ano = jogoAlterado.ano;
             jogo.publicadora = jogoAlterado.publicadora;
-            jogo.finalizado = jogoAlterado.finalizado;
+            jogo.status = jogoAlterado.status;
 
             await db.SaveChangesAsync();
 

@@ -3,6 +3,6 @@ public class Serie {
     public string titulo { get; set; }
     public int ano { get; set; }
     public int episodios { get; set; }
-    public bool assistida  { get; set; }
+    public string status { get; set; }
 
 }

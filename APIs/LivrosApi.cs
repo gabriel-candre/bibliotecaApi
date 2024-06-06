@@ -15,7 +15,7 @@ public static class LivrosApi {
             return Results.Created($"/Livros/{livro.Id}", livro);
         });
         
-        group.MapPut("/", async (int id, Livro livroAlterado, BibliotecaContext db) => {
+        group.MapPut("/{id}", async (int id, Livro livroAlterado, BibliotecaContext db) => {
             var livro = await db.Livros.FindAsync(id);
             
             if (livro is null) {
@@ -27,7 +27,7 @@ public static class LivrosApi {
             livro.ano = livroAlterado.ano;
             livro.autor = livroAlterado.autor;
             livro.genero = livroAlterado.genero;
-            livro.finalizado = livroAlterado.finalizado;
+            livro.status = livroAlterado.status;
 
             await db.SaveChangesAsync();
 

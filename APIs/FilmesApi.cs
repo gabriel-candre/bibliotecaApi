@@ -15,7 +15,7 @@ public static class FilmesApi {
             return Results.Created($"/filmes/{filme.Id}", filme);
         });
         
-        group.MapPut("/", async (int id, Filme filmeAlterado, BibliotecaContext db) => {
+        group.MapPut("/{id}", async (int id, Filme filmeAlterado, BibliotecaContext db) => {
             var filme = await db.Filmes.FindAsync(id);
             
             if (filme is null) {
@@ -25,7 +25,7 @@ public static class FilmesApi {
             filme.titulo = filmeAlterado.titulo;
             filme.ano = filmeAlterado.ano;
             filme.duracao = filmeAlterado.duracao;
-            filme.assistido = filmeAlterado.assistido;
+            filme.status = filmeAlterado.status;
 
             await db.SaveChangesAsync();
 

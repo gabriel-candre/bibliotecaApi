@@ -3,6 +3,6 @@ public class Filme {
     public string titulo  { get; set; }
     public int ano { get; set; }
     public int duracao { get; set; }
-    public bool assistido { get; set; }
+    public string status { get; set; }
 
 }

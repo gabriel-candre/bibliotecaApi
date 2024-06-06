@@ -26,11 +26,12 @@ namespace BibliotecaApi.Migrations
                     b.Property<int>("ano")
                         .HasColumnType("int");
 
-                    b.Property<bool>("assistido")
-                        .HasColumnType("tinyint(1)");
-
                     b.Property<int>("duracao")
                         .HasColumnType("int");
+
+                    b.Property<string>("status")
+                        .IsRequired()
+                        .HasColumnType("longtext");
 
                     b.Property<string>("titulo")
                         .IsRequired()
@@ -50,10 +51,11 @@ namespace BibliotecaApi.Migrations
                     b.Property<int>("ano")
                         .HasColumnType("int");
 
-                    b.Property<bool>("finalizado")
-                        .HasColumnType("tinyint(1)");
-
                     b.Property<string>("publicadora")
+                        .IsRequired()
+                        .HasColumnType("longtext");
+
+                    b.Property<string>("status")
                         .IsRequired()
                         .HasColumnType("longtext");
 
@@ -79,15 +81,16 @@ namespace BibliotecaApi.Migrations
                         .IsRequired()
                         .HasColumnType("longtext");
 
-                    b.Property<bool>("finalizado")
-                        .HasColumnType("tinyint(1)");
-
                     b.Property<string>("genero")
                         .IsRequired()
                         .HasColumnType("longtext");
 
                     b.Property<int>("paginas")
                         .HasColumnType("int");
+
+                    b.Property<string>("status")
+                        .IsRequired()
+                        .HasColumnType("longtext");
 
                     b.Property<string>("titulo")
                         .IsRequired()
@@ -107,11 +110,12 @@ namespace BibliotecaApi.Migrations
                     b.Property<int>("ano")
                         .HasColumnType("int");
 
-                    b.Property<bool>("assistida")
-                        .HasColumnType("tinyint(1)");
-
                     b.Property<int>("episodios")
                         .HasColumnType("int");
+
+                    b.Property<string>("status")
+                        .IsRequired()
+                        .HasColumnType("longtext");
 
                     b.Property<string>("titulo")
                         .IsRequired()

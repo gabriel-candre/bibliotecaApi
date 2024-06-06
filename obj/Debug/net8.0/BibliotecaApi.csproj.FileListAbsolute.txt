@@ -448,3 +448,7 @@ E:/_ws-TopicosSystems/BibliotecaApi/obj/Debug/net8.0/ref/BibliotecaApi.dll
 /media/gabriel.andre@crfpr.local/GABSDRIVE/_ws-TopicosSystems/BibliotecaApi/obj/Debug/net8.0/BibliotecaApi.genruntimeconfig.cache
 /media/gabriel.andre@crfpr.local/GABSDRIVE/_ws-TopicosSystems/BibliotecaApi/obj/Debug/net8.0/ref/BibliotecaApi.dll
 /home/gabriel.andre@crfpr.local/Desktop/BibliotecaApi/obj/Debug/net8.0/BibliotecaApi.sourcelink.json
+/media/gabriel.andre@crfpr.local/GABSDRIVE/_ws-TopicosSystems/BibliotecaApi/bin/Debug/net8.0/package-lock.json
+/media/gabriel.andre@crfpr.local/GABSDRIVE/_ws-TopicosSystems/BibliotecaApi/bin/Debug/net8.0/package.json
+/home/gabriel.andre@crfpr.local/Desktop/BibliotecaApi/bin/Debug/net8.0/package-lock.json
+/home/gabriel.andre@crfpr.local/Desktop/BibliotecaApi/bin/Debug/net8.0/package.json

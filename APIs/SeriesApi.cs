@@ -15,7 +15,7 @@ public static class SeriesApi {
             return Results.Created($"/filmes/{serie.Id}", serie);
         });
         
-        group.MapPut("/", async (int id, Serie serieAlterado, BibliotecaContext db) => {
+        group.MapPut("/{id}", async (int id, Serie serieAlterado, BibliotecaContext db) => {
             var serie = await db.Series.FindAsync(id);
             
             if (serie is null) {
@@ -25,7 +25,7 @@ public static class SeriesApi {
             serie.titulo = serieAlterado.titulo;
             serie.ano = serieAlterado.ano;
             serie.episodios = serieAlterado.episodios;
-            serie.assistida = serieAlterado.assistida;
+            serie.status = serieAlterado.status;
 
             await db.SaveChangesAsync();
 
