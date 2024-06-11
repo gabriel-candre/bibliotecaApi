@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/home/gabriel.andre@crfpr.local/Desktop/BibliotecaApi/BibliotecaApi.csproj": {}
+    "/home/gabriel.andre@crfpr.local/Desktop/bibliotecaApi/BibliotecaApi.csproj": {}
   },
   "projects": {
-    "/home/gabriel.andre@crfpr.local/Desktop/BibliotecaApi/BibliotecaApi.csproj": {
+    "/home/gabriel.andre@crfpr.local/Desktop/bibliotecaApi/BibliotecaApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/home/gabriel.andre@crfpr.local/Desktop/BibliotecaApi/BibliotecaApi.csproj",
+        "projectUniqueName": "/home/gabriel.andre@crfpr.local/Desktop/bibliotecaApi/BibliotecaApi.csproj",
         "projectName": "BibliotecaApi",
-        "projectPath": "/home/gabriel.andre@crfpr.local/Desktop/BibliotecaApi/BibliotecaApi.csproj",
+        "projectPath": "/home/gabriel.andre@crfpr.local/Desktop/bibliotecaApi/BibliotecaApi.csproj",
         "packagesPath": "/home/gabriel.andre@crfpr.local/.nuget/packages/",
-        "outputPath": "/home/gabriel.andre@crfpr.local/Desktop/BibliotecaApi/obj/",
+        "outputPath": "/home/gabriel.andre@crfpr.local/Desktop/bibliotecaApi/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/home/gabriel.andre@crfpr.local/.nuget/NuGet/NuGet.Config"
